@@ -5,6 +5,6 @@ services:
   app:
     build: .
     image: "yegorjke/ping-pong:latest"
-    command: "uvicorn pingpong.main:create_app"
+    command: "uvicorn pingpong.main:create_app --host 0.0.0.0"
     ports:
       - "8000:8000"
