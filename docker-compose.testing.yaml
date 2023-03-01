@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  pytest:
+    build:
+      dockerfile: docker/Dockerfile
+    image: "yegorjke/ping-pong:latest"
+    command: "pytest -s -v tests/"
